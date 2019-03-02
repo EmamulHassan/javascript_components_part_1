@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- css links -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <title>JavaScript Components</title>
+</head>
+<body>
+  <p id="nsu">HTML</p>
+    <button type="button" onclick="customFunc()">Click</button>
+    <script >
+      function customFunc()
+      {
+        document.getElementById('nsu').innerHTML="Hypertext Markup Language";
+      }
+    </script>
+    <p>(10+5)*5=<span id="algebra"></span></p>
+    <button type="button" onclick="algebra()">Click to calculate</button>
+    <script >
+      function algebra()
+      {
+        document.getElementById('algebra').innerHTML=(10+5)*5;
+      }
+    </script><br>
+    <button type="button" onclick="multiplication()">multiply x*7</button>
+    <script >
+      var x;
+      x=10;
+        function multiplication()
+        {
+          document.getElementById('multi').innerHTML=x*7;
+        }
+    </script>
+    <p id="multi">x*10</p>
+    <button type="button" onclick="concate()">Click here to concate Emamul and Hassan</button>
+    <script >
+        function concate()
+        {
+          document.getElementById('con').innerHTML="Emamul"+" "+"Hassan"
+        }
+    </script>
+    <p id="con"></p>
+    <button type="button" onclick="add()">Click to add 10 and 20</button>
+    <script >
+      var a=10;
+      var b=20;
+      var total=a+b;
+        function add()
+        {
+          document.getElementById('add').innerHTML="the total is: "+total;
+        }
+    </script>
+    <p id="add"></p>
+    <p>javascript object</p>
+    <script >
+      var person={
+      f_name:"Abir",
+      age:20
+    };
+            function obb()
+            {
+              document.getElementById('obb').innerHTML=person.f_name+" is "+person.age+" years old";
+            }
+    </script>
+    <p id="obb" onclick="obb()">click</p>
+    <p>Length of University:</p>
+    <p id="length"></p>
+    <script>
+    var txt = "University";
+    document.getElementById("length").innerHTML = txt.length;
+    </script>
+    <p> Array practice</p>
+    <p id="arr"></p>
+    <script>
+    var arr =
+    ["Premio",
+    "BMW",
+    "Audi"
+    ];
+    document.getElementById('arr').innerHTML = arr;
+    </script>
+    <p> click to turn on or off the bulb</p>
+    <img src="images/pic_bulboff.gif" id="image">
+    <button onclick="off()">Off</button>
+    <button onclick="onn()">On</button>
+    <script>
+    function off()
+    {
+    document.getElementById('image').src='images/pic_bulboff.gif'
+  }
+    function onn()
+    {
+    document.getElementById('image').src='images/pic_bulbon.gif'
+  }
+    </script>
+
+
+  <!-- jQuery links -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
